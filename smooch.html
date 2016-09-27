@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> -->
+	<script src="https://cdn.smooch.io/smooch.min.js"></script>
+	<style>
+		body { margin: 0;}
+		#sk-header { display: none !important;}
+		#sk-holder #sk-container { border: none !important; box-shadow: none !important; right: 0 !important; }
+		#sk-holder #sk-container #sk-wrapper { border: none !important; height: 100% !important; width: 100% !important;}
+		#sk-holder #sk-container #sk-conversation { height: calc(100% - 45px) !important;}
+	</style>
+</head>
+
+<body>
+	<script>
+		var config = {
+			smoochToken: 'dhekxvcynmdsvu4wgcc2u5sl8'
+		}
+
+		Smooch.init({
+			appToken: config.smoochToken,
+			embedded: true
+		});
+		Smooch.render(document.getElementById('chat-container'));
+		console.log(config.smoochToken)
+	</script>
+</body>
+</html>
